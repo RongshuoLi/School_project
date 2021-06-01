@@ -3,11 +3,9 @@ fileobj = open("data.csv","r") # r,w or a are the options
 delfirst = fileobj.readline()
 datalist = fileobj.readlines()
 fileobj.close()
-#print(datalist)
 
 conflist = []
 for country in datalist:
-    #print(country)
     templist = country.split(",")
     pname = templist[2]
     cname = templist[3]
